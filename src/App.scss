@@ -1,0 +1,55 @@
+$black: #000;
+$grey: #999;
+$blue: #1040cc;
+
+.App {
+  // TODO
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  .message {
+    display: block;
+    margin: 20px 0;
+    background-color: $blue;
+    color: $black;
+
+    > div {
+      display: inline-block;
+    }
+
+    &.read {
+      background-color: transparent;
+    }
+  }
+
+  .image-wrapper {
+    width: 5%;
+    vertical-align: top;
+
+    img {
+      border-radius: 50%;
+      width: 70%;
+    }
+  }
+
+  .message-body {
+    width: 94%;
+
+    > p {
+      margin: 10px 0;
+    }
+
+    .message-copy {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .date {
+      color: $grey;
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+}
